@@ -6,14 +6,12 @@ env:
   global:
     - VLC_VER=2.2.3
     - ELECTRON_VER=latest
-    - ELECTRON_VER2=0.33.9
+    - ELECTRON_VER2=0.37.6
     - NW_VER=latest
     - BUILD_DIR=./build/Release
 
   matrix:
-    - npm_config_wcjs_runtime=electron npm_config_wcjs_runtime_version=$ELECTRON_VER npm_config_wcjs_arch=x64
     - npm_config_wcjs_runtime=electron npm_config_wcjs_runtime_version=$ELECTRON_VER2 npm_config_wcjs_arch=x64
-    - npm_config_wcjs_runtime=nw npm_config_wcjs_runtime_version=$NW_VER npm_config_wcjs_arch=x64
 
 addons:
   apt:
